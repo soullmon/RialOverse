@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RialOverse Profile Builder</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>RialOverse</h1>
+  <h3>Profile Bulder v.1 <br>by : <a href="https://x.com/soullmon_">@soullmon_</a></h3>
+  <p>You've entered the world of Rialo! Join RialOverse, Build your character, and many things will happen in the future!
+ <span>{---If you're a Dev, you'll find it and discover the secret of rare items!---}</span></p>
+
+  <!-- Avatar -->
+<div class="character-wrapper">
+    <div id="character">
+      <img id="back" class="layer" src="" alt="">
+      <img id="skin" class="layer" src="" alt="">
+      <img id="nose" class="layer" src="" alt="">
+      <img id="mouth" class="layer" src="" alt="">
+      <img id="tatto" class="layer" src="" alt="">
+      <img id="eyes" class="layer" src="" alt="">
+      <img id="eyebrow" class="layer" src="" alt="">
+      <img id="clothes" class="layer" src="" alt="">
+      <img id="hand" class="layer" src="" alt="">
+      <img id="hair" class="layer" src="" alt="">
+      <img id="face" class="layer" src="" alt="">
+      <img id="offhand" class="layer" src="" alt="">
+      <img id="head" class="layer" src="" alt="">
+      <img id="accessories" class="layer" src="" alt="">
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="action-btn" onclick="toggleInfo()"><i class="fa-solid fa-info"></i></button>
+    <button class="action-btn" onclick="resetCharacter()"> <i class="fa-solid fa-xmark"></i></button>
+    <button class="action-btn" onclick="randomCharacter()"> <i class="fa-solid fa-shuffle"></i></button>
+    <button class="action-btn" onclick="downloadCharacter()"><i class="fa-solid fa-circle-down"></i></button>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu">
+    <button onclick="showOptions('back')"><img src="/Documentation/UI/icon/back.png" alt="Back"></button>
+    <button onclick="showOptions('skin')"><img src="/Documentation/UI/icon/skin.png" alt="Skin"></button>
+    <button onclick="showOptions('nose')"><img src="/Documentation/UI/icon/nose.png" alt="Nose"></button>
+    <button onclick="showOptions('mouth')"><img src="/Documentation/UI/icon/mouth.png" alt="Mouth"></button>
+    <button onclick="showOptions('tatto')"><img src="/Documentation/UI/icon/tatto.png" alt="Tatto"></button>
+    <button onclick="showOptions('eyes')"><img src="/Documentation/UI/icon/eyes.png" alt="Eyes"></button>
+    <button onclick="showOptions('eyebrow')"><img src="/Documentation/UI/icon/eyebrow.png" alt="eyebrow"></button>
+    <button onclick="showOptions('clothes')"><img src="/Documentation/UI/icon/clothes.png" alt="Clothes"></button>
+    <button onclick="showOptions('hand')"><img src="/Documentation/UI/icon/hand.png" alt="Hand"></button>
+    <button onclick="showOptions('face')"><img src="/Documentation/UI/icon/face.png" alt="Face"></button>
+    <button onclick="showOptions('hair')"><img src="/Documentation/UI/icon/hair.png" alt="Hair"></button>
+    <button onclick="showOptions('offhand')"><img src="/Documentation/UI/icon/offhand.png" alt="Offhand"></button>
+    <button onclick="showOptions('head')"><img src="/Documentation/UI/icon/head.png" alt="Head"></button>
+    <button onclick="showOptions('accessories')"><img src="/Documentation/UI/icon/accessories.png" alt="Accessories"></button>
+  </div>
+
+
+  <!--  CATEGORY -->
+    <!-- background -->
+  <div id="back-options" class="options">
+    <img src="/Documentation/section/back/1.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/2.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/3.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/4.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/5.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/6.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/7.png" onclick="toggleLayer('back', this)">
+    <img src="/Documentation/section/back/8.png" onclick="toggleLayer('back', this)">
+  </div>
+  
+  <!-- Skin -->
+  <div id="skin-options" class="options">
+    <img src="/Documentation/section/skin/1.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/2.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/3.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/4.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/5.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/6.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/7.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/8.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/9.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/10.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/11.png" onclick="toggleLayer('skin', this)">
+    <img src="/Documentation/section/skin/12.png" onclick="toggleLayer('skin', this)">
+  </div>
+  
+  <!-- nose -->
+  
+  <div id="nose-options" class="options">
+    <img src="Documentation/section/nose/1.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/2.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/3.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/4.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/5.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/6.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/7.png" onclick="toggleLayer('nose', this)">
+    <img src="Documentation/section/nose/8.png" onclick="toggleLayer('nose', this)">
+  </div>
+  
+  <!-- mouth -->
+  <div id="mouth-options" class="options">
+    <img src="/Documentation/section/mouth/1.png" onclick="toggleLayer('mouth', this)">
+    <img src="/Documentation/section/mouth/2.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/3.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/4.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/5.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/6.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/7.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/8.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/9.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/10.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/11.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/12.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/13.png" onclick="toggleLayer('mouth', this)">
+     <img src="/Documentation/section/mouth/14.png" onclick="toggleLayer('mouth', this)">
+  </div>
+  
+  <!-- tatto -->
+  <div id="tatto-options" class="options">
+    <img src="/Documentation/section/tatto/1.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/2.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/3.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/4.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/5.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/6.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/7.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/8.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/9.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/10.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/11.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/12.png" onclick="toggleLayer('tatto', this)">
+    <img src="/Documentation/section/tatto/13.png" onclick="toggleLayer('tatto', this)">
+    
+  </div>
+  
+  <!-- eye -->
+  <div id="eyes-options" class="options">
+    <img src="/Documentation/section/eyes/1.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/2.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/3.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/4.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/5.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/6.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/7.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/8.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/9.png" onclick="toggleLayer('eyes', this)">
+    <img src="/Documentation/section/eyes/10.png" onclick="toggleLayer('eyes', this)">
+  <img src="/Documentation/section/eyes/11.png" onclick="toggleLayer('eyes', this)">
+  <img src="/Documentation/section/eyes/12.png" onclick="toggleLayer('eyes', this)">
+  </div>
+  
+  <!-- eyebrow -->
+  <div id="eyebrow-options" class="options">
+    <img src="/Documentation/section/eyebrow/1.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/2.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/3.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/4.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/5.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/6.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/7.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/8.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/9.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/10.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/11.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/12.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/13.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/14.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/15.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/16.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/17.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/18.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/19.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/20.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/21.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/22.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/23.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/24.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/25.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/26.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/27.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/28.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/29.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/30.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/31.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/32.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/33.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/34.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/35.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/36.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/37.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/38.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/39.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/40.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/41.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/42.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/43.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/44.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/45.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/46.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/47.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/48.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/49.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/50.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/51.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/52.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/53.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/54.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/55.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/56.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/57.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/58.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/59.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/60.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/61.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/62.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/63.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/64.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/65.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/66.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/67.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/68.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/69.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/70.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/71.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/72.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/73.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/74.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/75.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/76.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/77.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/78.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/79.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/80.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/81.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/82.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/83.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/84.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/85.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/86.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/87.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/88.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/89.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/90.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/91.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/92.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/93.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/94.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/95.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/96.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/97.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/98.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/99.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/100.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/101.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/102.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/103.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/104.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/105.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/106.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/107.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/108.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/109.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/110.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/111.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/112.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/113.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/115.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/115.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/116.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/117.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/118.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/119.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/120.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/121.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/122.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/123.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/124.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/125.png" onclick="toggleLayer('eyebrow', this)">
+    <img src="/Documentation/section/eyebrow/126.png" onclick="toggleLayer('eyebrow', this)">
+  </div>
+  
+  <!-- clothes -->
+  <div id="clothes-options" class="options">
+    <img src="/Documentation/section/clothes/1.png" onclick="toggleLayer('clothes', this)">
+    <img src="/Documentation/section/clothes/2.png" onclick="toggleLayer('clothes', this)">
+    <img src="/Documentation/section/clothes/3.png" onclick="toggleLayer('clothes', this)">
+    <img src="/Documentation/section/clothes/4.png" onclick="toggleLayer('clothes', this)">
+    <img src="/Documentation/section/clothes/5.png" onclick="toggleLayer('clothes', this)">
+  </div>
+  
+  <!-- hand -->
+  <div id="hand-options" class="options">
+    <img src="/Documentation/section/hand/1.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/2.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/3.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/4.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/5.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/6.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/7.png" onclick="toggleLayer('hand', this)">
+    <img src="Documentation/section/hand/8.png" onclick="toggleLayer('hand', this)">
+  </div>
+    
+  <!-- face -->
+  <div id="face-options" class="options">
+   <img src="/Documentation/section/face/1.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/2.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/3.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/4.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/5.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/6.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/7.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/8.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/9.png" onclick="toggleLayer('face', this)">
+   <img src="/Documentation/section/face/10.png" onclick="toggleLayer('face', this)">
+  </div>
+  
+  <!-- hair -->
+  <div id="hair-options" class="options">
+    <img src="/Documentation/section/hair/1.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/2.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/3.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/4.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/5.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/6.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/7.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/8.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/9.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/10.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/11.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/12.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/13.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/14.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/15.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/16.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/17.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/18.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/19.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/20.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/21.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/22.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/23.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/24.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/25.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/26.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/27.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/28.png" onclick="toggleLayer('hair', this)">
+    <img src="/Documentation/section/hair/29.png" onclick="toggleLayer('hair', this)">
+  </div>
+  
+  <!-- offhand -->
+  <div id="offhand-options" class="options">
+    <img src="/Documentation/section/offhand/1.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/2.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/3.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/4.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/5.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/6.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/7.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/8.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/9.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/10.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/11.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/12.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/13.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/14.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/15.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/17.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/18.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/19.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/20.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/21.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/22.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/23.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/24.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/25.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/26.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/27.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/28.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/29.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/30.png" onclick="toggleLayer('offhand', this)">
+    <img src="/Documentation/section/offhand/31.png" onclick="toggleLayer('offhand', this)">
+    
+  </div>
+  
+  <!-- head -->
+  <div id="head-options" class="options">
+
+  </div>
+  
+  <!-- accesories -->
+  <div id="accessories-options" class="options">
+    
+  </div>
+
+  <!-- Modal Info --->
+ <div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span onclick="toggleInfo()">
+      <h2>ℹ️ RialOverse Profile Builder</h2>
+      <p>Use the menu below to create a character according to your wish.</p>
+      <ul>
+         <li>Click the category icon to select an item.</li>
+         <li>Click the item again to delete it. </li> 
+         <li>Used button <i class="fa-solid fa-shuffle"></i> for Shuffle </li>
+         <li>Used Button <i class="fa-solid fa-xmark"></i> for reset </li>
+         <li>Used Button <i class="fa-solid fa-circle-down"></i> for download </li>
+        </ul>
+         <p><===[===[===||| Rare Item |||===]===]===></p>
+         <img src="Documentation/UI/info.png" class="rareitem" alt="info">
+    </div>
+  </div>
+  
+  <canvas id="canvas" width="400" height="400" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
