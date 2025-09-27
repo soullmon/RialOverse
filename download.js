@@ -2,7 +2,7 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
   let canvas = document.getElementById("canvas"); 
   let ctx = canvas.getContext("2d");
 
-  // size(1000x1000)
+  // ukuran 1000x1000
   canvas.width = 1000;
   canvas.height = 1000;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -16,32 +16,21 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
     let img = document.getElementById(id);
     if (img.src) {
       let temp = new Image();
-      temp.crossOrigin = "anonymous"; // safe A CORS
+      temp.crossOrigin = "anonymous"; // aman untuk CORS
       temp.src = img.src;
       temp.onload = function () {
         ctx.drawImage(temp, 0, 0, canvas.width, canvas.height);
         loaded++;
 
         if (loaded === withSrc.length) {
-          // Konversi canvas ke blob → download
-          canvas.toBlob(function (blob) {
-            let link = document.createElement("a");
-            link.download = "character.png";
-            let url = URL.createObjectURL(blob);
-            link.href = url;
+          // konversi langsung ke dataURL
+          let dataURL = canvas.toDataURL("image/png");
+          let link = document.createElement("a");
+          link.download = "character.png";
+          link.href = dataURL;
 
-            if (typeof link.download !== "undefined") {
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-              URL.revokeObjectURL(url);
-            } else {
-              // fallback Android/iOS
-              window.open(url, "_blank");
-            }
-          }, "image/png");
-        }
-      };
-    }
-  });
-});
+          if (typeof link.download !== "undefined") {
+            // download langsung (desktop browser)
+            document.body.appendChild(link);
+            link.
+
