@@ -1,3 +1,4 @@
+
 const categories = ["back","skin","nose","mouth","tatto","eyes","eyebrow","clothes","hand","hair","face","offhand","head","accessories"];
 const mandatory = ["skin","nose","mouth","eyes","eyebrow",""];
 
@@ -42,9 +43,10 @@ function randomCharacter() {
       } else {
         document.getElementById(cat).src = "";
       }
-       }
+    }
   });
 }
+
 
 function downloadCharacter() {
   let canvas = document.getElementById("canvas");
@@ -70,8 +72,10 @@ function downloadCharacter() {
           link.click();
         }
       }
+    }
   });
 }
+
 /* Modal Info */
 function toggleInfo() {
   const modal = document.getElementById("infoModal");
