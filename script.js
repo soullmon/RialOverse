@@ -6,11 +6,20 @@ window.onload = function () {
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+  // teks peringatan
+  ctx.fillStyle = "#ff0000";
+  ctx.font = "bold 40px Arial";
+  ctx.textAlign = "center";
+  ctx.fillText("Build Your Profile, Just Click item", canvas.width / 2, canvas.height / 2);
+
+  // default image
+  /*
   let img = new Image();
-  img.src = "Documentation/UI/default.png"; // ganti dengan gambar peringatan/default Anda
+  img.src = "default.png"; 
   img.onload = function () {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   }
+  */
 };
 const categories = ["back","skin","nose","mouth","tatto","eyes","eyebrow","clothes","hand","hair","face","offhand","head","accessories"];
 const mandatory = ["skin","nose","mouth","eyes","eyebrow",""];
