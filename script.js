@@ -42,38 +42,21 @@ function randomCharacter() {
       } else {
         document.getElementById(cat).src = "";
       }
-    }
-  });
-}
 
+document.getElementById("downloadBtn").addEventListener("click", function () {
+  const canvas = document.getElementById("canvas");
 
-function downloadCharacter() {
-  let canvas = document.getElementById("canvas");
-  let ctx = canvas.getContext("2d");
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // Cek apakah canvas sudah ada isinya
+  if (!canvas) {
+    alert("Canvas tidak ditemukan!");
+    return;
+  }
 
-  let withSrc = categories.filter(id => document.getElementById(id).src);
-  let loaded = 0;
-
-  withSrc.forEach(id => {
-    let img = document.getElementById(id);
-    if (img.src) {
-      let temp = new Image();
-      temp.crossOrigin = "anonymous";
-      temp.src = img.src;
-      temp.onload = function() {
-        ctx.drawImage(temp, 0, 0, canvas.width, canvas.height);
-        loaded++;
-        if (loaded === withSrc.length) {
-          let link = document.createElement("a");
-          link.download = "character.png";
-          link.href = canvas.toDataURL();
-          link.click();
-        }
-      }
-    }
-  });
-}
+  const link = document.createElement("a");
+  link.download = "avatar.png"; // nama file hasil download
+  link.href = canvas.toDataURL("image/png"); // ambil data gambar dari canvas
+  link.click(); // trigger download
+});
 
 /* Modal Info */
 function toggleInfo() {
