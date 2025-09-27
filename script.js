@@ -1,4 +1,17 @@
+window.onload = function () {
+  let canvas = document.getElementById("canvas");
+  let ctx = canvas.getContext("2d");
 
+  // Biar background putih
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  let img = new Image();
+  img.src = "Documentation/UI/default.png"; // ganti dengan gambar peringatan/default Anda
+  img.onload = function () {
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }
+};
 const categories = ["back","skin","nose","mouth","tatto","eyes","eyebrow","clothes","hand","hair","face","offhand","head","accessories"];
 const mandatory = ["skin","nose","mouth","eyes","eyebrow",""];
 
