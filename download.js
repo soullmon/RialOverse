@@ -2,7 +2,7 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
   let canvas = document.getElementById("canvas"); 
   let ctx = canvas.getContext("2d");
 
-  // size(1200x1200)
+  // size(1000x1000)
   canvas.width = 1000;
   canvas.height = 1000;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
