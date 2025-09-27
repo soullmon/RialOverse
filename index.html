@@ -41,7 +41,7 @@
     <button class="action-btn" onclick="toggleInfo()"><i class="fa-solid fa-info"></i></button>
     <button class="action-btn" onclick="resetCharacter()"> <i class="fa-solid fa-xmark"></i></button>
     <button class="action-btn" onclick="randomCharacter()"> <i class="fa-solid fa-shuffle"></i></button>
-    <button class="action-btn" onclick="downloadCharacter()"><i class="fa-solid fa-circle-down"></i></button>
+    <button is="downloadBtn" class="action-btn" onclick="downloadCharacter()"><i class="fa-solid fa-circle-down"></i></button>
   </div>
 
   <!-- Menu -->
@@ -421,8 +421,8 @@
     </div>
   </div>
   
-  <canvas id="canvas" width="400" height="400" style="display:none;"></canvas>
-
+  <canvas id="canvas" width="600" height="600" style="display:none;"></canvas>
   <script src="script.js"></script>
+  <script src="download.js"></script>
 </body>
 </html>
