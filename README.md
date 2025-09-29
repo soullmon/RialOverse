@@ -9,6 +9,7 @@ RialOverse is a project I created for the Rialo community, allowing you to perso
 1. Visit the Website: https://soullmon.github.io/RialOverse/
 2. Build Your Character
 Choose from various element icons:
+(This Path of Layers Documentation/section]
 * Skin
 * Nose
 * Mouth
