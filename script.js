@@ -1,5 +1,5 @@
 const categories = ["back","skin","nose","mouth","tatto","eyes","eyebrow","clothes","hand","hair","face","offhand","head","accessories"];
-const mandatory = ["skin","nose","mouth","eyes","eyebrow",""];
+const mandatory = ["skin","nose","mouth","eyes","eyebrow","hair"];
 
 function showOptions(category, btn) {
   document.querySelectorAll('.options').forEach(opt => opt.classList.remove('active'));
