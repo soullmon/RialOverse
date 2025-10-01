@@ -20,9 +20,9 @@ Choose from various element icons:
 * Hands
 * Face
 * Hair
-* Offhand
-* Head
 * Accessories
+* Head
+* Offhand
 3. Every change is immediately visible visually.
 4. Additional Features
 * ℹ️ View information
