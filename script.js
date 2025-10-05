@@ -24,7 +24,7 @@ const specialItems = {
     { layer: "face", src: "Documentation/section/face/club3.png" }
   ],
 
-  "1420355807379193937": [
+  "1393211226967900190": [
     { layer: "clothes", src: "Documentation/section/clothes/builder1.png" },
     { layer: "clothes", src: "Documentation/section/clothes/helper1.png" }
   ],
