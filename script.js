@@ -61,10 +61,10 @@ function unlockSpecialItems() {
       container.appendChild(img);
     });
 
-    alert("✅ ID valid!");
+    alert("✅ ID VALID!");
   } else {
     section.style.display = "none";
-    alert("❌ ID Invalid");
+    alert("❌ ID INVALID");
   }
 }
 
