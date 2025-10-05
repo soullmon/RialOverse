@@ -36,12 +36,19 @@
       <img id="offhand" class="layer" src="" alt="">
     </div>
   </div>
-<!-- Input ID Discord untuk mendapatkan Special Item -->
+<!-- Form  ID  -->
 <div class="id-form">
-  <label for="userId">SPECIAL ITEM CODE:</label>
-  <input type="text" id="userId" placeholder="Code">
-  <button onclick="checkSpecialId()">GET</button>
+  <label for="userId">Masukkan ID Discord kamu:</label>
+  <input type="text" id="userId" placeholder="contoh: 1407324448851234856">
+  <button onclick="unlockSpecialItems()">Submit</button>
 </div>
+
+<!-- Section Special Item (hide ) -->
+<div id="special-options" class="options" style="display:none;">
+  <h3>🎁 Choose Special Item </h3>
+  <div id="special-items-container"></div>
+</div>
+
 
     <!-- Input ID for access special item 
 <div class="id-form">
