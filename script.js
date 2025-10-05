@@ -11,21 +11,21 @@ function showOptions(category, btn) {
 
   window.scrollTo({top: el.offsetTop - 100, behavior: "smooth"});
 }
-// list ID  valid Special Item Club//
-const validIds = ["1407324448851234856"];
+// list ID  valid Special Item Club
+const validIds = ["1407324448851234856","1420355807379193937","1393211299017658379"];
 function checkId() {
   const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
-  const specialSection = document.getElementById("special-section1");
+  const specialSection = document.getElementById("special-section");
 
   if (validIds.includes(inputId)) {
-    alert("✅ ID VALID,YOU GET SPECIAL ITEMS CLUB");
+    alert("✅ ID VALID,YOU GET SPECIAL ITEMS");
     specialSection.style.display = "flex"; // Show rare item
   } else {
     alert("❌ ID INVALID.");
     specialSection.style.display = "none";
   }
  
-  // list ID  valid Special Item //
+  /* list ID  valid Special Item
 const validIds = ["1393211226967900190","1420355807379193937"];
 function checkId() {
   const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
@@ -40,7 +40,7 @@ function checkId() {
   }
 }
 
-    // list ID  valid Special Item Royal //
+    // list ID  valid Special Item Royal
 const validIds = ["1393211299017658379"];
 function checkId() {
   const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
@@ -53,7 +53,7 @@ function checkId() {
     alert("❌ ID INVALID.");
     specialSection.style.display = "none";
   }
-}
+} */
 function toggleLayer(layerId, imgEl) {
   const target = document.getElementById(layerId);
   if (target.src.includes(imgEl.src)) {
