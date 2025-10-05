@@ -16,7 +16,7 @@ function showOptions(category, btn) {
 // ===== Sistem Unlock Opsi Special Item =====
 
 // Daftar ID dan daftar item spesial yang bisa dipilih
-const specialItems =const specialItems = {
+const specialItems = 
   "1407324448851234856": [
     { layer: "clothes", src: "Documentation/section/clothes/club1.png" },
     { layer: "clothes", src: "Documentation/section/clothes/club2.png" },
@@ -24,7 +24,7 @@ const specialItems =const specialItems = {
     { layer: "clothes", src: "Documentation/section/clothes/club4.png" },
     { layer: "face", src: "Documentation/section/face/club1.png" },
     { layer: "face", src: "Documentation/section/face/club2.png" },
-    { layer: "face", src: "Documentation/section/face/club3.png" },
+    { layer: "face", src: "Documentation/section/face/club3.png" }
   ],
   "1420355807379193937": [
     { layer: "clothes", src: "Documentation/section/clothes/builder1.png" },
