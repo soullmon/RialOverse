@@ -11,7 +11,49 @@ function showOptions(category, btn) {
 
   window.scrollTo({top: el.offsetTop - 100, behavior: "smooth"});
 }
+// list ID  valid Special Item Club//
+const validIds = ["1407324448851234856"];
+function checkId() {
+  const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
+  const specialSection = document.getElementById("special-section1");
 
+  if (validIds.includes(inputId)) {
+    alert("✅ ID VALID,YOU GET SPECIAL ITEMS CLUB");
+    specialSection.style.display = "flex"; // Show rare item
+  } else {
+    alert("❌ ID INVALID.");
+    specialSection.style.display = "none";
+  }
+ 
+  // list ID  valid Special Item //
+const validIds = ["1393211226967900190","1420355807379193937"];
+function checkId() {
+  const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
+  const specialSection = document.getElementById("special-section2");
+
+  if (validIds.includes(inputId)) {
+    alert("✅ ID VALID,YOU GET SPECIAL ITEMS");
+    specialSection.style.display = "flex"; // Show rare item
+  } else {
+    alert("❌ ID INVALID.");
+    specialSection.style.display = "none";
+  }
+}
+
+    // list ID  valid Special Item Royal //
+const validIds = ["1393211299017658379"];
+function checkId() {
+  const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
+  const specialSection = document.getElementById("special-section3");
+
+  if (validIds.includes(inputId)) {
+    alert("✅ ID VALID,YOU GET SPECIAL ITEMS ROYAL");
+    specialSection.style.display = "flex"; // Show rare item
+  } else {
+    alert("❌ ID INVALID.");
+    specialSection.style.display = "none";
+  }
+}
 function toggleLayer(layerId, imgEl) {
   const target = document.getElementById(layerId);
   if (target.src.includes(imgEl.src)) {
