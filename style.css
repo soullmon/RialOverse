@@ -68,21 +68,40 @@ li {
 .id-form {
   margin: 20px 0;
   background: #111;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 12px 18px;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.id-form label {
+  font-size: 20px;
+  color: #a9ddd3;
+}
+
 .id-form input {
   padding: 6px 10px;
-  font-size: 16px;
-  margin: 0 8px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid #a9ddd3;
+  background: #010101;
+  color: #e8e3d5;
 }
+
 .id-form button {
   padding: 6px 12px;
   background: #a9ddd3;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  color: #010101;
+}
+
+.id-form button:hover {
+  background: #e8e3d5;
 }
 
  .rareitem {
