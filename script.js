@@ -11,11 +11,8 @@ function showOptions(category, btn) {
 
   window.scrollTo({top: el.offsetTop - 100, behavior: "smooth"});
 }
-// list ID  valid Special Item 
-// ===== Special Item Unlock System ===
-// ===== Sistem Unlock Opsi Special Item =====
 
-// Daftar ID dan daftar item spesial yang bisa dipilih
+// ===== Special Item Unlock System ==
 const specialItems = {
   "1407324448851234856": [
     { layer: "clothes", src: "Documentation/section/clothes/club1.png" },
@@ -52,7 +49,7 @@ function unlockSpecialItems() {
     // show section special item
     section.style.display = "flex";
 
-    // add setiap item ke opsi
+    // add All item to opsi
     items.forEach(item => {
       const img = document.createElement("img");
       img.src = item.src;
@@ -67,9 +64,6 @@ function unlockSpecialItems() {
     alert("❌ ID INVALID");
   }
 }
-
-
-
 
  
   /* list ID  valid Special Item
