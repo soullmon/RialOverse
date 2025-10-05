@@ -16,7 +16,7 @@ function showOptions(category, btn) {
 // ===== Sistem Unlock Opsi Special Item =====
 
 // Daftar ID dan daftar item spesial yang bisa dipilih
-const specialItems = 
+const specialItems = {
   "1407324448851234856": [
     { layer: "clothes", src: "Documentation/section/clothes/club1.png" },
     { layer: "clothes", src: "Documentation/section/clothes/club2.png" },
@@ -26,16 +26,19 @@ const specialItems =
     { layer: "face", src: "Documentation/section/face/club2.png" },
     { layer: "face", src: "Documentation/section/face/club3.png" }
   ],
+
   "1420355807379193937": [
     { layer: "clothes", src: "Documentation/section/clothes/builder1.png" },
     { layer: "clothes", src: "Documentation/section/clothes/helper1.png" }
   ],
+
   "1393211299017658379": [
     { layer: "head", src: "Documentation/section/head/royal1.png" },
     { layer: "head", src: "Documentation/section/head/royal2.png" },
     { layer: "head", src: "Documentation/section/head/royal3.png" }
   ]
 };
+
 
 function unlockSpecialItems() {
   const inputId = document.getElementById("userId").value.trim();
@@ -53,8 +56,6 @@ function unlockSpecialItems() {
     items.forEach(item => {
       const img = document.createElement("img");
       img.src = item.src;
-      img.alt = item.name;
-      img.title = item.name;
       img.onclick = () => toggleLayer(item.layer, img);
 
       container.appendChild(img);
