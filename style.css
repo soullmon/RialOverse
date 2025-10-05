@@ -65,6 +65,26 @@ li {
   text-align:left ;
 }
 
+.id-form {
+  margin: 20px 0;
+  background: #111;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.id-form input {
+  padding: 6px 10px;
+  font-size: 16px;
+  margin: 0 8px;
+}
+.id-form button {
+  padding: 6px 12px;
+  background: #a9ddd3;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
  .rareitem {
    align-items: center;
    width: 600px;
