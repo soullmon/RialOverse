@@ -12,18 +12,60 @@ function showOptions(category, btn) {
   window.scrollTo({top: el.offsetTop - 100, behavior: "smooth"});
 }
 // list ID  valid Special Item 
-const validIds = ["1407324448851234856","1420355807379193937","1393211299017658379"];
-function checkId() {
-  const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
-  const specialSection = document.getElementById("special-section");
+// ===== Special Item Unlock System ===
+const specialItems = {
+  "1407324448851234856": [
+    { layer: "clothes", src: "Documentation/section/clothes/club1.png" },
+    { layer: "clothes", src: "Documentation/section/clothes/club2.png" },
+    { layer: "clothes", src: "Documentation/section/clothes/club3.png" },
+    { layer: "clothes", src: "Documentation/section/clothes/club4.png" },
+    { layer: "face", src: "Documentation/section/face/club1.png" },
+    { layer: "face", src: "Documentation/section/face/club2.png" },
+    { layer: "face", src: "Documentation/section/face/club3.png" },
+  ],
+  "1420355807379193937": [
+    { layer: "clothes", src: "Documentation/section/clothes/builder1.png" },
+    { layer: "clothes", src: "Documentation/section/clothes/helper1.png" }
+  ],
+  "1393211299017658379": [
+    { layer: "head", src: "Documentation/section/head/royal1.png" },
+    { layer: "head", src: "Documentation/section/head/royal2.png" },
+    { layer: "head", src: "Documentation/section/head/royal3.png" }
+  ]
+};
 
-  if (validIds.includes(inputId)) {
-    alert("✅ ID VALID,YOU GET SPECIAL ITEMS");
-    specialSection.style.display = "flex"; // Show rare item
+function checkSpecialId() {
+  const inputId = document.getElementById("userId").value.trim();
+  const items = specialItems[inputId];
+
+  if (items) {
+    let loaded = 0;
+    let total = items.length;
+
+    items.forEach(item => {
+      const target = document.getElementById(item.layer);
+      const img = new Image();
+      img.src = item.src;
+      img.crossOrigin = "anonymous"; // fix for GitHub Pages & iOS
+
+      img.onload = () => {
+        target.src = img.src;
+        loaded++;
+        if (loaded === total) {
+          alert(`🎉 ${total} Special Item ADD`);
+        }
+      };
+
+      img.onerror = () => {
+        alert("⚠️ ID INVALID: " + item.src);
+      };
+    });
   } else {
-    alert("❌ ID INVALID.");
-    specialSection.style.display = "none";
-  } }
+    alert("❌ Special Item Invalid.");
+  }
+}
+
+
  
   /* list ID  valid Special Item
 const validIds = ["1393211226967900190","1420355807379193937"];
