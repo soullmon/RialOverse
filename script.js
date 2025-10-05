@@ -11,7 +11,7 @@ function showOptions(category, btn) {
 
   window.scrollTo({top: el.offsetTop - 100, behavior: "smooth"});
 }
-// list ID  valid Special Item Club
+// list ID  valid Special Item 
 const validIds = ["1407324448851234856","1420355807379193937","1393211299017658379"];
 function checkId() {
   const inputId1 = document.getElementById("userId").value.trim().toUpperCase();
@@ -23,7 +23,7 @@ function checkId() {
   } else {
     alert("❌ ID INVALID.");
     specialSection.style.display = "none";
-  }
+  } }
  
   /* list ID  valid Special Item
 const validIds = ["1393211226967900190","1420355807379193937"];
