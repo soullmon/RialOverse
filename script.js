@@ -13,7 +13,10 @@ function showOptions(category, btn) {
 }
 // list ID  valid Special Item 
 // ===== Special Item Unlock System ===
-const specialItems = {
+// ===== Sistem Unlock Opsi Special Item =====
+
+// Daftar ID dan daftar item spesial yang bisa dipilih
+const specialItems =const specialItems = {
   "1407324448851234856": [
     { layer: "clothes", src: "Documentation/section/clothes/club1.png" },
     { layer: "clothes", src: "Documentation/section/clothes/club2.png" },
@@ -34,36 +37,37 @@ const specialItems = {
   ]
 };
 
-function checkSpecialId() {
+function unlockSpecialItems() {
   const inputId = document.getElementById("userId").value.trim();
   const items = specialItems[inputId];
+  const section = document.getElementById("special-options");
+  const container = document.getElementById("special-items-container");
+
+  container.innerHTML = ""; // empty kontainer 
 
   if (items) {
-    let loaded = 0;
-    let total = items.length;
+    // show section special item
+    section.style.display = "flex";
 
+    // add setiap item ke opsi
     items.forEach(item => {
-      const target = document.getElementById(item.layer);
-      const img = new Image();
+      const img = document.createElement("img");
       img.src = item.src;
-      img.crossOrigin = "anonymous"; // fix for GitHub Pages & iOS
+      img.alt = item.name;
+      img.title = item.name;
+      img.onclick = () => toggleLayer(item.layer, img);
 
-      img.onload = () => {
-        target.src = img.src;
-        loaded++;
-        if (loaded === total) {
-          alert(`🎉 ${total} Special Item ADD`);
-        }
-      };
-
-      img.onerror = () => {
-        alert("⚠️ ID INVALID: " + item.src);
-      };
+      container.appendChild(img);
     });
+
+    alert("✅ ID valid!");
   } else {
-    alert("❌ Special Item Invalid.");
+    section.style.display = "none";
+    alert("❌ ID Invalid");
   }
 }
+
+
 
 
  
