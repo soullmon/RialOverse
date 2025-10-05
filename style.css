@@ -103,6 +103,33 @@ li {
 .id-form button:hover {
   background: #e8e3d5;
 }
+#special-options {
+  flex-direction: column;
+  align-items: center;
+}
+
+#special-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#special-items-container img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #a9ddd3;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #eee;
+  transition: 0.3s;
+}
+
+#special-items-container img:hover {
+  transform: scale(1.1);
+  border-color: #e8e3d5;
+  background: #fff;
+}
 
  .rareitem {
    align-items: center;
