@@ -2,20 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RialOverse Profile Builder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO BASIC -->
+  <meta name="description" content="RialOverse its a profile Builder PFS Rialo Community.">
+  <meta name="keywords" content="RialOverse, Avatar, Blockchain, Web3, NFT, community, Metaverse, DeFi, PFP, Rialo">
+  <meta name="author" content="@soullmon_">
+  <!-- OPEN GRAPH (Preview share ke WhatsApp, Discord, Facebook,) -->
+  <meta property="og:title" content="RialOverse | PFP-Builder">
+  <meta property="og:description" content="Enter to RialOverse — Avatar Bulder Rialo Community">
+  <meta property="og:image" content="https://github.com/soullmon/RialOverse/blob/37f9d7b09acabbfe9bc52a479750560c6ba6e643/Documentation/UI/banner.jpeg">
+  <meta property="og:url" content="https://soullmon.github.io/RialOverse/">
+  <meta property="og:type" content="website">
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RialOverse |  PFP-Builder">
+  <meta name="twitter:description" content="Enter to RialOverse — Avatar Bulder Rialo Community">
+  <meta name="twitter:image" content="https://github.com/soullmon/RialOverse/blob/37f9d7b09acabbfe9bc52a479750560c6ba6e643/Documentation/UI/banner.jpeg">
+  <!-- FAVICON (opsional) -->
+  <link rel="icon" href="Documentation/UI/favicon.png" type="image/png">
+  
+  <title>RialOverse|PFS-Builder</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&family=VT323&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <h1>RialOverse</h1>
-  <h3>Profile Bulder v.1 <br>by : <a href="https://x.com/soullmon_">@soullmon_</a></h3>
+  <h3>Community PFP Bulder <br>by : <a href="https://x.com/soullmon_">@soullmon_</a> Powered by : <a href="https://x.com/RialoHQ">@RialoHQ</a></h3>
   <p>You've entered the world of Rialo! Join RialOverse, Build your character, and many things will happen in the future!
- <span>{---If you're a Dev, you'll find it and discover the secret of rare items!---}</span></p>
+ <span>{---If you're a Dev, you'll find it and discover the secret of rare items!---}</span>
+ <span>{---Club, Royal, Builder, you'll find it and discover of Special items!---}</span></p>
 
   <!-- Avatar -->
 <div class="character-wrapper">
@@ -38,44 +57,17 @@
   </div>
 <!-- Form  ID  -->
 <div class="id-form">
-  <label for="userId">FOR SPECIAL ITEM</label>
+  <label for="userId">SPECIAL ITEM</label>
   <input type="text" id="userId" placeholder="NUMBER OF CODE">
   <button onclick="unlockSpecialItems()">GET</button>
 </div>
 
 <!-- Section Special Item (hide ) -->
 <div id="special-options" class="options" style="display:none;">
-  <h3> GRIALO! YOU GOT SPECIAL ITEM 🔥 </h3>
+  <h2> GRIALO! YOU GOT SPECIAL ITEM </h2>
   <div id="special-items-container"></div>
 </div>
-
-
-    <!-- Input ID for access special item 
-<div class="id-form">
-  <label for="userId"><h3>Special Item:</h3></label>
-  <input type="text" id="userId" placeholder="Enter your ID">
-  <button class="action-btn" onclick="checkId()">GET</button>
-</div>
-
-<!-- special item (hide) 
-<div id="special-section" class="options" style="display:none;">
-  <h3>Special Items Unlocked!</h3>
-  <img src="Documentation/section/clothes/club1.png" onclick="toggleLayer('clothes', this)">
-  <img src="Documentation/section/clothes/club2.png" onclick="toggleLayer('clothes', this)">
-  <img src="Documentation/section/clothes/club3.png" onclick="toggleLayer('clothes', this)">
-  <img src="Documentation/section/clothes/club4.png" onclick="toggleLayer('clothes', this)">
-  <img src="Documentation/section/clothes/club1.png" onclick="toggleLayer(' clothes', this)">
-  <img src="Documentation/section/clothes/builder1.png" onclick="toggleLayer(' clothes', this)">
-  <img src="Documentation/section/clothes/helper1.png" onclick="toggleLayer(' clothes', this)">
-  <img src="Documentation/section/face/club1.png" onclick="toggleLayer('face', this)">
-  <img src="Documentation/section/face/club2.png" onclick="toggleLayer('face', this)">
-  <img src="Documentation/section/face/club3.png" onclick="toggleLayer('face', this)">
-  <img src="Documentation/section/head/royal1.png" onclick="toggleLayer('head', this)">
-  <img src="Documentation/section/head/royal2.png" onclick="toggleLayer(' head', this)">
-  <img src="Documentation/section/head/royal3.png" onclick="toggleLayer('head', this)">
-</div> -->
   
-
   <div class="actions">
     <button class="action-btn" onclick="toggleInfo()"><i class="fa-solid fa-info"></i></button>
     <button class="action-btn" onclick="resetCharacter()"> <i class="fa-solid fa-xmark"></i></button>
