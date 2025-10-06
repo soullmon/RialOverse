@@ -147,7 +147,7 @@ li {
 .options img:hover { border-color: #a9ddd3; }
 .options img.selected { border-color: #a9ddd3; background: #fff3f3; }
 
-/* Modal default h */
+/* Modal default hide */
 .modal {
   display: none; /* */
   position: fixed;
@@ -158,7 +158,7 @@ li {
   background: rgba(0,0,0,0.6);
 }
 
-/* Isi Modal */
+/* Modal */
 .modal-content {
   background: rgba(0,0,0,0.6);
   padding: 20px;
