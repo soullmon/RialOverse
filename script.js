@@ -31,8 +31,7 @@ const specialItems = {
 
   "1393211299017658379": [
     { layer: "head", src: "Documentation/section/head/royal1.png" },
-    { layer: "head", src: "Documentation/section/head/royal2.png" },
-    { layer: "head", src: "Documentation/section/head/royal3.png" }
+    { layer: "head", src: "Documentation/section/head/royal2.png" }
   ]
 };
 
