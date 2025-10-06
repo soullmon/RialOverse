@@ -1,4 +1,4 @@
-# 🛠️ About RialOverse: Profile Builder v.1
+# 🛠️ About RialOverse | PFP-Builder
 
 RialOverse is a project I created for the Rialo community, allowing you to personalize your own character. I built this first version of RialOverse as a web-based profile builder. In it, you can:
 * Build a character from scratch with many elements: backgrounds, skins, noses, mouths, tattoos, eyes, eyebrows, clothing, hands, faces, hair, offhands, heads, and accessories
@@ -33,6 +33,10 @@ Choose from various element icons:
 ## 🧪 Rare Item !
 "If you're a Developer, or you can find! you'll find it and unlock the secret of rare items!"
 This isn't just a gimmick. There's a hidden secret for those looking for Rare Items. I've listed rare item info on the information board.
+
+## 🪄 Special Item !
+"If you're a Club, Royal, Builder or Helper you can enter the Code! and unlock Special items!"
+ I've send the code listed Special item in community.
 
 ## 🔮 What's Next?
 I envision RialOverse evolving into something new—perhaps a game, an interactive world, or even integration with blockchain technology or AI. But most importantly, I want RialOverse to be a place for play and expression.
