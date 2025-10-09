@@ -1,53 +1,66 @@
-# 🛠️ About RialOverse | PFP-Builder
+# RialOshare | Rialo Threads Generator
 
-RialOverse is a project I created for the Rialo community, allowing you to personalize your own character. I built this first version of RialOverse as a web-based profile builder. In it, you can:
-* Build a character from scratch with many elements: backgrounds, skins, noses, mouths, tattoos, eyes, eyebrows, clothing, hands, faces, hair, offhands, heads, and accessories
-* Assemble a random character by clicking the shuffle button
-* Download your created character for use in personal projects, social media profiles, or simply as a digital collection.
+**RialOshare** is a **thread/post generator tool for X (Twitter)** focused on the **Rialo ecosystem**, built to support **community education and contribution**.  
+With RialOshare, you can **automatically generate educational threads** and **share insights about Rialo** in an engaging, fast, and consistent way.
 
-## 🕹️ How to Use
-1. Visit the Website: https://soullmon.github.io/RialOverse/
-2. Build Your Character
-Choose from various element icons:
-(This Path of Layers Documentation/section]
-* Skin
-* Nose
-* Mouth
-* Tattoo
-* Eyes
-* Eyebrows
-* Clothing
-* Hands
-* Face
-* Hair
-* Accessories
-* Head
-* Offhand
-3. Every change is immediately visible visually.
-4. Additional Features
-* ℹ️ View information
-* ❌ Reset character
-* 🔄 Randomize appearance
-* ⬇️ Download character results
+---
 
-## 🧪 Rare Item !
-"If you're a Developer, or you can find! you'll find it and unlock the secret of rare items!"
-This isn't just a gimmick. There's a hidden secret for those looking for Rare Items. I've listed rare item info on the information board.
+## 🚀 What is RialOshare?
+RialOshare is my **second community project** for Rialo, designed to help anyone:
+- ✍️ Create **automated educational threads** about Rialo’s technology and concepts.  
+- 🎨 Add **avatars and community identities** to each post.  
+- 🤝 Contribute to spreading awareness and education about **AI-native Web3** to the public.
 
-## 🪄 Special Item !
-"If you're a Club, Royal, Builder or Helper you can enter the Code! and unlock Special items!"
- I've send the code listed Special item in community.
+---
 
-## 🔮 What's Next?
-I envision RialOverse evolving into something new—perhaps a game, an interactive world, or even integration with blockchain technology or AI. But most importantly, I want RialOverse to be a place for play and expression.
-Thank you for trying out and supporting this project.
+## 🧩 Key Features
+- 🧵 **Thread Generator** — Turn content from the Rialo website or blog into ready-to-post X/Twitter threads.  
+- 🪪 **Avatar & Role System** — Add contributor identity (name, avatar, and role).  
+- 🖼️ **Visual Support** — Include automatic banners or visuals to enhance your posts.  
+- 🌐 **Open Community** — Anyone can join and contribute by creating and sharing Rialo-related content.  
 
-Rethink, Rebuild, Rialo. 
+---
 
-Soullmon
+## 🎯 Project Goal
+> Empower the **Rialo community** to share knowledge and insights about AI-native Web3 openly and collaboratively.
 
-## More Games Rialo : https://soullmon.github.io/RialoGames/
+RialOshare exists to help spread **Rialo education** to the public through social media — in a simple yet meaningful way.
 
-[![Twitter](https://img.shields.io/badge/Twitter-%40soullmon-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)]([https://x.com/soullmon_])
-[![Website](https://img.shields.io/badge/Website-soullmon-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)]([https://soullmon.github.io/portfolio/])
+---
 
+## ⚙️ How to Use
+1. Open the **RialOshare Web App** or run the local version.  
+2. Enter:
+   - 🪪 Name / Nickname  
+   - 🖼️ Avatar (optional)  
+   - 🧩 Role (Contributor, Researcher, Builder, etc.)  
+3. Select a source material.  
+4. Click **Generate Thread**.  
+5. Edit or adjust the color/style if needed.  
+6. Download the result and **post it directly to X/Twitter**.  
+
+---
+
+## 🤝 Contribution
+Contributions are always welcome!  
+You can help by:
+- Adding new educational sources  
+- Creating additional thread templates  
+- Developing a mobile or web version  
+- Sharing generated content across Web3 and AI communities  
+
+---
+
+### 🌌 “Share your threads. Spread the knowledge. Build the AI-native Web3.”
+
+---
+
+## Rethink, Rebuild, Rialo.  
+
+**Soullmon**
+
+### Build Your PFS Avatars  
+🔗 [https://soullmon.github.io/RialOverse/](https://soullmon.github.io/RialOverse/)
+
+[![Twitter](https://img.shields.io/badge/Twitter-%40soullmon-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/soullmon_)  
+[![Website](https://img.shields.io/badge/Website-soullmon-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://soullmon.github.io/portfolio/)
